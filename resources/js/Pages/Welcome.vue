@@ -6,17 +6,17 @@
       </div>
       <div class="w-5/6 mt-12">
         <ul>
-          <li class="my-7">
+          <li class="p-5 my-3 w-52 hover:bg-cyan-900 hover:rounded hover:text-slate-200">
             <i class="fas fa-plus-square"></i>
             &nbsp;
             <a href="">Garapan Nyar</a>
           </li>
-          <li class="my-7">
+          <li class="p-5 my-3 w-52 hover:bg-cyan-900 hover:rounded hover:text-slate-200">
             <i class="fas fa-list"></i>
             &nbsp;
             <a href="">List Garapan</a>
           </li>
-          <li class="my-7">
+          <li class="p-5 my-3 w-52 hover:bg-cyan-900 hover:rounded hover:text-slate-200">
             <i class="fas fa-file-alt"></i>
             &nbsp;
             <a href="">List Kata-kata</a>
