@@ -6,20 +6,29 @@
       </div>
       <div class="mt-12">
         <ul class="w-52 flex flex-col">
-          <li class="p-5 my-3 w-full bg-cyan-900 rounded text-slate-200 hover:cursor-pointer">
+          <li class="p-5 my-1 w-full shadow-md bg-cyan-900 rounded text-slate-200 hover:cursor-pointer">
             <i class="fas fa-plus-square"></i>
-            &nbsp;
-            <a href="">Garapan Nyar</a>
+            <a class="ml-3" href="">Garapan Nyar</a>
           </li>
-          <li class="p-5 my-3 w-full hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
+          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
             <i class="fas fa-list"></i>
-            &nbsp;
-            <a href="">List Garapan</a>
+            <a class="ml-3" href="">List Garapan</a>
           </li>
-          <li class="p-5 my-3 w-full hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
+          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
+            <i class="fas fa-users-cog"></i>
+            <a class="ml-3" href="">Ngatur Akun</a>
+          </li>
+          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
             <i class="fas fa-file-alt"></i>
-            &nbsp;
-            <a href="">List Kata-kata</a>
+            <a class="ml-3" href="">Ngatur Kata-kata</a>
+          </li>
+          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
+            <i class="far fa-lightbulb"></i>
+            <a class="ml-3" href="">Basis Kawruh</a>
+          </li>
+          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
+            <i class="fas fa-info-circle"></i>
+            <a class="ml-3" href="">Kridit</a>
           </li>
         </ul>
       </div>
