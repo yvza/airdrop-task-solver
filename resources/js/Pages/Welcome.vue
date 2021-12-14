@@ -20,7 +20,7 @@
           </li>
           <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
             <i class="fas fa-file-alt"></i>
-            <a class="ml-3" href="">Ngatur Kata-kata</a>
+            <a class="ml-3" href="">Ngatur Kata-Kata</a>
           </li>
           <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
             <i class="far fa-lightbulb"></i>
@@ -49,6 +49,14 @@
       </div>
       <div class="content grow bg-slate-100 p-10 overflow-x-scroll">
         Konten
+
+        tes
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Username</span>
+          </label> 
+          <input type="text" placeholder="username" class="input input-bordered">
+        </div>
       </div>
     </article>
   </section>
