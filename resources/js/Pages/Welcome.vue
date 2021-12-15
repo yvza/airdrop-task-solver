@@ -1,6 +1,6 @@
 <template>
   <section class="flex">
-    <aside class="w-1/6 p-6 h-screen origin-bg-color text-slate-400">
+    <aside class="w-1/6 p-6 h-screen origin-bg-color text-slate-400 flex flex-col">
       <div class="">
         <img src="../../img/airdrop_task_solver.png" alt="Airdrop Task Solver">
       </div>
@@ -32,12 +32,17 @@
           </li>
         </ul>
       </div>
+      <div class="grow flex items-end justify-center">
+        <div class="flex items-center">
+          <i class="fas fa-sun"></i>&nbsp;<input type="checkbox" class="toggle" @click="modeToggled()">&nbsp;<i class="fas fa-moon"></i>
+        </div>
+      </div>
     </aside>
     <article class="w-5/6 flex flex-col">
       <div class="px-10 pt-10 shadow-lg">
         <div class="head-content">
           <h1 class="text-2xl font-bold font-sans">Garapan Nyar</h1>
-          <h6 class="text-sm text-slate-400 font-sans">Nok kene nggone gawe nambah garapan</h6>
+          <h6 class="text-sm text-slate-400 font-sans dark:text-slate-900">Nok kene nggone gawe nambah garapan</h6>
         </div>
         <div class="head-menu pt-10">
           <ul class="flex">
@@ -50,7 +55,6 @@
       <div class="content grow bg-slate-100 p-10 overflow-x-scroll">
         Konten
 
-        tes
         <div class="form-control">
           <label class="label">
             <span class="label-text">Username</span>
@@ -63,7 +67,22 @@
 </template>
 <script>
 export default {
-  
+  name: 'Welcome',
+  data() {
+    return {
+      isDark: false
+    }
+  },
+  methods: {
+    modeToggled() {
+      this.isDark = !this.isDark
+      if (this.isDark) {
+        document.querySelector('html').classList.add('dark')
+      } else {
+        document.querySelector('html').classList.remove('dark')
+      }
+    }
+  },
 }
 </script>
 <style>
