@@ -5899,6 +5899,10 @@ html {
     transform: rotate(1turn);
   }
 }
+.checkbox:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 .form-control {
   display: flex;
   flex-direction: column;
@@ -5942,6 +5946,10 @@ html {
   cursor: pointer;
   text-decoration: underline;
 }
+.toggle:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 @-webkit-keyframes button-pop {
 
   0% {
@@ -5969,6 +5977,38 @@ html {
   to {
     transform: scale(1);
   }
+}
+.checkbox {
+  --chkbg: var(--bc);
+  --chkfg: var(--b1);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  --tw-border-opacity: 0.2;
+  border-color: hsla(var(--bc) / var(--tw-border-opacity, 1));
+  border-width: 1px;
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: var(--rounded-btn, .5rem);
+}
+.checkbox:focus-visible {
+  box-shadow: 0 0 0 2px hsl(var(--b1)), 0 0 0 4px hsl(var(--bc));
+}
+.checkbox:checked {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--bc) / var(--tw-bg-opacity, 1));
+  background-repeat: no-repeat;
+  -webkit-animation: checkmark var(--animation-input, .2s)  ease-in-out;
+  animation: checkmark var(--animation-input, .2s)  ease-in-out;
+  background-image: linear-gradient(-45deg, transparent 65%, hsl(var(--chkbg)) 0), linear-gradient(45deg, transparent 75%, hsl(var(--chkbg)) 0), linear-gradient(-45deg, hsl(var(--chkbg)) 40%, transparent 0), linear-gradient(45deg, hsl(var(--chkbg)) 30%, hsl(var(--chkfg)) 0, hsl(var(--chkfg)) 40%, transparent 0), linear-gradient(-45deg, hsl(var(--chkfg)) 50%, hsl(var(--chkbg)) 0);
+}
+.checkbox:disabled {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--bc) / var(--tw-bg-opacity, 1));
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: .2;
 }
 @-webkit-keyframes checkmark {
 
@@ -6074,6 +6114,45 @@ html {
     box-shadow: 0 0 0 4px hsl(var(--b1)) inset, 0 0 0 4px hsl(var(--b1)) inset, var(--focus-shadow);
   }
 }
+.toggle {
+  --chkbg: hsla(var(--bc) / .2);
+  --focus-shadow: 0 0 0;
+  --handleoffset: 1.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  --tw-bg-opacity: 0.2;
+  background-color: hsla(var(--bc) / var(--tw-bg-opacity, 1));
+  --tw-border-opacity: 0.2;
+  border-color: hsla(var(--bc) / var(--tw-border-opacity, 1));
+  border-width: 1px;
+  cursor: pointer;
+  height: 1.5rem;
+  width: 3rem;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .3s;
+  border-radius: var(--rounded-badge, 1.9rem);
+  transition: background,box-shadow var(--animation-input, .2s) ease-in-out;
+  box-shadow: calc(var(--handleoffset)*-1) 0 0 2px hsl(var(--b1)) inset, 0 0 0 2px hsl(var(--b1)) inset, var(--focus-shadow);
+}
+.toggle:focus-visible {
+  --focus-shadow: 0 0 0 2px hsl(var(--b1)), 0 0 0 4px hsl(var(--bc));
+}
+.toggle:checked {
+  --chkbg: hsl(var(--bc));
+  --tw-bg-opacity: 1;
+  --tw-border-opacity: 1;
+  box-shadow: var(--handleoffset) 0 0 2px hsl(var(--b1)) inset, 0 0 0 2px hsl(var(--b1)) inset, var(--focus-shadow);
+}
+[dir=rtl] .toggle:checked {
+  box-shadow: calc(var(--handleoffset)*1) 0 0 2px hsl(var(--b1)) inset, 0 0 0 2px hsl(var(--b1)) inset, var(--focus-shadow);
+}
+.toggle:disabled {
+  --tw-bg-opacity: 0.2;
+  background-color: hsla(var(--bc) / var(--tw-bg-opacity, 1));
+  border-color: transparent;
+  cursor: not-allowed;
+}
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -6114,6 +6193,18 @@ html {
 }
 .flex-col {
   flex-direction: column;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.justify-center {
+  justify-content: center;
 }
 .overflow-x-scroll {
   overflow-x: scroll;
@@ -6213,4 +6304,8 @@ html {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.dark .dark\:text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
