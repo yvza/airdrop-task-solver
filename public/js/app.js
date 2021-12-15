@@ -20103,7 +20103,8 @@ __webpack_require__.r(__webpack_exports__);
   name: 'Welcome',
   data: function data() {
     return {
-      isDark: false
+      isDark: false,
+      step: 1
     };
   },
   methods: {
@@ -20115,6 +20116,9 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         document.querySelector('html').classList.remove('dark');
       }
+    },
+    stepHandler: function stepHandler(currentStep) {
+      this.step = currentStep;
     }
   }
 });
@@ -20168,8 +20172,90 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<article class=\"w-5/6 flex flex-col\"><div class=\"px-10 pt-10 shadow-lg\"><div class=\"head-content\"><h1 class=\"text-2xl font-bold font-sans\">Garapan Nyar</h1><h6 class=\"text-sm text-slate-400 font-sans dark:text-slate-900\">Nok kene nggone gawe nambah garapan</h6></div><div class=\"head-menu pt-10\"><ul class=\"flex\"><li class=\"py-3 mr-3 border-b-4 border-blue-500 hover:cursor-pointer\">Langkah 1</li><li class=\"py-3 mx-3 hover:border-b-4 hover:border-blue-500 hover:cursor-pointer\">Langkah 2</li><li class=\"py-3 mx-3 hover:border-b-4 hover:border-blue-500 hover:cursor-pointer\">Langkah 3</li></ul></div></div><div class=\"content grow bg-slate-100 p-10 overflow-x-scroll\"> Konten <div class=\"form-control\"><label class=\"label\"><span class=\"label-text\">Username</span></label><input type=\"text\" placeholder=\"username\" class=\"input input-bordered\"></div></div></article>", 1);
+var _hoisted_11 = {
+  "class": "w-5/6 flex flex-col"
+};
+var _hoisted_12 = {
+  "class": "px-10 pt-10 shadow-lg"
+};
 
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "head-content"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  "class": "text-2xl font-bold font-sans"
+}, "Garapan Nyar"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
+  "class": "text-sm text-slate-400 font-sans dark:text-slate-900"
+}, "Nok kene nggone gawe nambah garapan")], -1
+/* HOISTED */
+);
+
+var _hoisted_14 = {
+  "class": "head-menu pt-10"
+};
+var _hoisted_15 = {
+  "class": "flex"
+};
+var _hoisted_16 = {
+  "class": "content grow bg-slate-100 p-10 overflow-x-scroll"
+};
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"form-control\"><label class=\"label\"><span class=\"label-text\">Airdrop Name</span></label><input type=\"text\" placeholder=\"16Sol for First 500 Participant\" class=\"input input-bordered\"></div><div class=\"form-control\"><label class=\"label\"><span class=\"label-text\">Project Url</span></label><input type=\"text\" placeholder=\"https://indoartproject.solana.com/\" class=\"input input-bordered\"></div><div class=\"form-control\"><label class=\"label\"><span class=\"label-text\">Distribution Date</span></label><input type=\"date\" class=\"input input-bordered\"></div>", 3);
+
+var _hoisted_20 = {
+  "class": "flex mt-4 justify-end"
+};
+
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Nerusake  ");
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fas fa-arrow-circle-right"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_23 = [_hoisted_21, _hoisted_22];
+
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"form-control\"><label class=\"cursor-pointer label\"><span class=\"label-text\"><i class=\"fab fa-twitter\"></i>  Twitter Task </span><input type=\"radio\" name=\"opt\" class=\"radio\" value=\"1\"></label></div><div class=\"form-control\"><label class=\"cursor-pointer label\"><span class=\"label-text\"><i class=\"fab fa-facebook\"></i>  Facebook Task </span><input type=\"radio\" name=\"opt\" class=\"radio\" value=\"2\"></label></div><div class=\"form-control\"><label class=\"cursor-pointer label\"><span class=\"label-text\"><i class=\"fab fa-instagram\"></i>  Instagram Task </span><input type=\"radio\" name=\"opt\" class=\"radio\" value=\"3\"></label></div>", 3);
+
+var _hoisted_27 = {
+  "class": "btn-group mt-4 justify-end"
+};
+
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fas fa-arrow-circle-left"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("  Mbalek");
+
+var _hoisted_30 = [_hoisted_28, _hoisted_29];
+
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Nerusake  ");
+
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fas fa-arrow-circle-right"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_33 = [_hoisted_31, _hoisted_32];
+
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"form-control\"><label class=\"label\"><span class=\"label-text\">Target Url</span></label><input type=\"text\" placeholder=\"https://twitter.com/yuza1337/status/179539111655374848\" class=\"input input-bordered\"></div><div class=\"form-control flex-col\"><label class=\"label\"><span class=\"label-text\">Aksi</span></label><div><button class=\"btn\"><i class=\"fas fa-user-plus\"></i>  Follow</button><button class=\"btn ml-3\"><i class=\"fas fa-heart\"></i>  Love</button><button class=\"btn ml-3\"><i class=\"fas fa-retweet\"></i>  Retweet</button><button class=\"btn ml-3\"><i class=\"fas fa-quote-left\"></i>  Quote Tweet</button></div></div>", 2);
+
+var _hoisted_36 = {
+  "class": "flex mt-4 justify-end"
+};
+
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fas fa-arrow-circle-left"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("  Mbalek");
+
+var _hoisted_39 = [_hoisted_37, _hoisted_38];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("aside", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "checkbox",
@@ -20177,7 +20263,45 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return $options.modeToggled();
     })
-  }), _hoisted_9, _hoisted_10])])]), _hoisted_11]);
+  }), _hoisted_9, _hoisted_10])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("article", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["py-3 mr-3 hover:cursor-not-allowed", $data.step === 1 ? 'border-b-4 border-blue-500' : ''])
+  }, "Langkah 1", 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["py-3 mx-3 hover:cursor-not-allowed", $data.step === 2 ? 'border-b-4 border-blue-500' : ''])
+  }, "Langkah 2", 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["py-3 mx-3 hover:cursor-not-allowed", $data.step === 3 ? 'border-b-4 border-blue-500' : ''])
+  }, "Langkah 3", 2
+  /* CLASS */
+  )])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[1] || (_cache[1] = function ($event) {
+      return $options.stepHandler(2);
+    }),
+    "class": "btn"
+  }, _hoisted_23)])], 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.step === 1]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[2] || (_cache[2] = function ($event) {
+      return $options.stepHandler(1);
+    }),
+    "class": "btn"
+  }, _hoisted_30), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $options.stepHandler(3);
+    }),
+    "class": "btn"
+  }, _hoisted_33)])], 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.step === 2]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[4] || (_cache[4] = function ($event) {
+      return $options.stepHandler(2);
+    }),
+    "class": "btn"
+  }, _hoisted_39)])], 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.step === 3]])])])]);
 }
 
 /***/ }),
