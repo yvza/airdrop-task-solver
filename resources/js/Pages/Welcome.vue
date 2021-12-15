@@ -53,13 +53,27 @@
         </div>
       </div>
       <div class="content grow bg-slate-100 p-10 overflow-x-scroll">
-        Konten
-
         <div class="form-control">
           <label class="label">
-            <span class="label-text">Username</span>
+            <span class="label-text">Airdrop Name</span>
           </label> 
-          <input type="text" placeholder="username" class="input input-bordered">
+          <input type="text" placeholder="16Sol for First 500 Participant" class="input input-bordered">
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Project Url</span>
+          </label> 
+          <input type="text" placeholder="https://indoartproject.solana.com/" class="input input-bordered">
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Distribution Date</span>
+          </label> 
+          <input type="date" class="input input-bordered">
+        </div>
+        <div class="btn-group mt-4 justify-end">
+          <button class="btn"><i class="fas fa-arrow-circle-left"></i>&nbsp; Mbalek</button>
+          <button class="btn">Nerusake&nbsp; <i class="fas fa-arrow-circle-right"></i></button>
         </div>
       </div>
     </article>
