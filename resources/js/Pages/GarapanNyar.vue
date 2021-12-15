@@ -95,7 +95,7 @@
                 <i class="fab fa-facebook"></i>&nbsp;
                 Facebook Task
               </span> 
-              <input type="radio" name="opt" class="radio" value="2">
+              <input type="radio" name="opt" class="radio" disabled="disabled" value="2">
             </label>
           </div>
           <div class="form-control">
@@ -104,7 +104,7 @@
                 <i class="fab fa-instagram"></i>&nbsp;
                 Instagram Task
               </span> 
-              <input type="radio" name="opt" class="radio" value="3">
+              <input type="radio" name="opt" class="radio" disabled="disabled" value="3">
             </label>
           </div>
           <div class="btn-group mt-4 justify-end">
@@ -140,7 +140,7 @@
 </template>
 <script>
 export default {
-  name: 'Welcome',
+  name: 'GarapanNyar',
   data() {
     return {
       isDark: false,
