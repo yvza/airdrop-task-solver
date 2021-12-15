@@ -6032,6 +6032,9 @@ html {
   cursor: pointer;
   text-decoration: underline;
 }
+.menu :where(li).disabled>a,.menu :where(li).disabled>span {
+  cursor: auto;
+}
 .radio:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -6257,6 +6260,13 @@ html {
 }
 .link:focus-visible {
   box-shadow: 0 0 0 2px currentColor;
+}
+.menu li.disabled>a:hover,.menu li.disabled>span:hover {
+  background-color: transparent;
+}
+.menu li.disabled>a,.menu li.disabled>span {
+  --tw-text-opacity: 0.2;
+  color: hsla(var(--bc) / var(--tw-text-opacity, 1));
 }
 .radio {
   --chkbg: var(--bc);
