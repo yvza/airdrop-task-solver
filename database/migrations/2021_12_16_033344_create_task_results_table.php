@@ -16,11 +16,11 @@ class CreateTaskResultsTable extends Migration
         Schema::create('task_results', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('tasks_id');
-            $table->integer('type');
+            $table->integer('type')->comment('1=twitter, 2=fb, 3=ig');
             $table->integer('status');
             $table->string('messages');
             $table->timestamps();
-            
+
             $table->foreign('tasks_id')->references('id')->on('tasks');
         });
     }
