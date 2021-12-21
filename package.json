@@ -23,6 +23,7 @@
         "@fortawesome/fontawesome-free": "^5.15.4",
         "@inertiajs/inertia": "^0.10.1",
         "@inertiajs/inertia-vue3": "^0.5.2",
+        "@inertiajs/progress": "^0.2.6",
         "daisyui": "^1.16.5",
         "vue": "^3.2.24"
     }
