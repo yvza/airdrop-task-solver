@@ -52,9 +52,27 @@
 </template>
 <script>
 import SideBarLink from "./SideBarLink.vue"
+import { ref } from 'vue'
 
 export default {
-  components: { SideBarLink }
+  components: { SideBarLink },
+  setup() {
+    const isDark = ref(false);
+    
+    function modeToggled() {
+      this.isDark = !this.isDark;
+      if (this.isDark) {
+        document.querySelector("html").classList.add("dark");
+      } else {
+        document.querySelector("html").classList.remove("dark");
+      }
+    }
+
+    return {
+      isDark,
+      modeToggled
+    }
+  }
 }
 </script>
 <style lang="">
