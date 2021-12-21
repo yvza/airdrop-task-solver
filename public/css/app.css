@@ -6261,6 +6261,12 @@ html {
 .link:focus-visible {
   box-shadow: 0 0 0 2px currentColor;
 }
+.menu li>a.active {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--p) / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: hsla(var(--pc) / var(--tw-text-opacity, 1));
+}
 .menu li.disabled>a:hover,.menu li.disabled>span:hover {
   background-color: transparent;
 }
@@ -6375,6 +6381,10 @@ html {
   --tw-scale-y: 1;
   transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   margin-left: 50%;
+}
+.table tr.active:nth-child(2n) td,.table tr.active:nth-child(2n) th,.table tr.active td,.table tr.active th {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b3) / var(--tw-bg-opacity, 1));
 }
 .toggle {
   --chkbg: hsla(var(--bc) / .2);
@@ -6512,8 +6522,18 @@ html {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
+}
+.pr-5 {
+  padding-right: 1.25rem;
 }
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
