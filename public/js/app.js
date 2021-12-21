@@ -20138,27 +20138,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   setup: function setup() {
-    var isDark = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
     var step = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(1);
 
-    function modeToggled() {
-      this.isDark = !this.isDark;
-
-      if (this.isDark) {
-        document.querySelector("html").classList.add("dark");
-      } else {
-        document.querySelector("html").classList.remove("dark");
-      }
-    }
-
-    function stepHandler() {
+    function stepHandler(currentStep) {
       this.step = currentStep;
     }
 
     return {
-      isDark: isDark,
       step: step,
-      modeToggled: modeToggled,
       stepHandler: stepHandler
     };
   },
@@ -20286,10 +20273,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _SideBarLink_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SideBarLink.vue */ "./resources/js/Shared/SideBarLink.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     SideBarLink: _SideBarLink_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  setup: function setup() {
+    var isDark = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(false);
+
+    function modeToggled() {
+      this.isDark = !this.isDark;
+
+      if (this.isDark) {
+        document.querySelector("html").classList.add("dark");
+      } else {
+        document.querySelector("html").classList.remove("dark");
+      }
+    }
+
+    return {
+      isDark: isDark,
+      modeToggled: modeToggled
+    };
   }
 });
 
@@ -20961,7 +20968,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     type: "checkbox",
     "class": "toggle",
     onClick: _cache[0] || (_cache[0] = function ($event) {
-      return _ctx.modeToggled();
+      return $setup.modeToggled();
     })
   }), _hoisted_21, _hoisted_22])])]);
 }
