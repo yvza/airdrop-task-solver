@@ -5001,7 +5001,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.border-b-4, .hover\:border-b-4 {
+.border-b-4 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
@@ -6432,9 +6432,6 @@ html {
 .mr-3 {
   margin-right: 0.75rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
 .mt-4 {
   margin-top: 1rem;
 }
@@ -6470,9 +6467,6 @@ html {
 }
 .items-center {
   align-items: center;
-}
-.items-baseline {
-  align-items: baseline;
 }
 .justify-end {
   justify-content: flex-end;
@@ -6521,12 +6515,6 @@ html {
 .pt-10 {
   padding-top: 2.5rem;
 }
-.pl-2 {
-  padding-left: 0.5rem;
-}
-.pl-3 {
-  padding-left: 0.75rem;
-}
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -6567,13 +6555,6 @@ html {
 }
 .hover\:rounded:hover {
   border-radius: 0.25rem;
-}
-.hover\:border-b-4:hover {
-  border-bottom-width: 4px;
-}
-.hover\:border-blue-500:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 .hover\:bg-cyan-900:hover {
   --tw-bg-opacity: 1;
