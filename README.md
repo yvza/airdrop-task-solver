@@ -10,5 +10,5 @@ Tech Stack:
 - Tailwind CSS 3.0.1
 - Axios 0.21
 - Laravel Mix 6.0.6
-- Lodash 6.0.6
+- Lodash 4.17.19
 - 10.4.11-MariaDB
