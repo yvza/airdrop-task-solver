@@ -6035,6 +6035,16 @@ html {
 .menu :where(li).disabled>a,.menu :where(li).disabled>span {
   cursor: auto;
 }
+.progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: .5rem;
+  border-radius: var(--rounded-box, 1rem);
+}
 .radio:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -6273,6 +6283,20 @@ html {
 .menu li.disabled>a,.menu li.disabled>span {
   --tw-text-opacity: 0.2;
   color: hsla(var(--bc) / var(--tw-text-opacity, 1));
+}
+.progress::-moz-progress-bar {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--n) / var(--tw-bg-opacity, 1));
+}
+.progress::-webkit-progress-bar {
+  --tw-bg-opacity: 0.2;
+  background-color: hsla(var(--n) / var(--tw-bg-opacity, 1));
+  border-radius: var(--rounded-box, 1rem);
+}
+.progress::-webkit-progress-value {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--nf) / var(--tw-bg-opacity, 1));
+  border-radius: var(--rounded-box, 1rem);
 }
 .radio {
   --chkbg: var(--bc);
