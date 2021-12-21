@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return inertia('GarapanNyar');
+    return Inertia::render('GarapanNyar');
+});
+
+Route::get('list-garapan', function () {
+    return Inertia::render('ListGarapan');
+});
+
+Route::get('ngatur-akun', function () {
+    return Inertia::render('NgaturAkun');
+});
+
+Route::get('ngatur-kata-kata', function () {
+    return Inertia::render('NgaturKataKata');
+});
+
+Route::get('basis-kawruh', function () {
+    return Inertia::render('BasisKawruh');
+});
+
+Route::get('kridit', function () {
+    return Inertia::render('Kridit');
 });
