@@ -1,18 +1,5 @@
 <template>
-  <section class="flex">
-    <aside class="w-1/6 p-6 h-screen origin-bg-color text-slate-400 flex flex-col">
-      <div class="">
-        <img src="../../img/airdrop_task_solver.png" alt="Airdrop Task Solver">
-      </div>
-      <div class="mt-12">
-        <SideBar />
-      </div>
-      <div class="grow flex items-end justify-center">
-        <div class="flex items-center">
-          <i class="fas fa-sun"></i>&nbsp;<input type="checkbox" class="toggle" @click="modeToggled()">&nbsp;<i class="fas fa-moon"></i>
-        </div>
-      </div>
-    </aside>
+  <Layout>
     <article class="w-5/6 flex flex-col">
       <div class="px-10 pt-10 shadow-lg">
         <div class="head-content">
@@ -111,11 +98,11 @@
         </div>
       </div>
     </article>
-  </section>
+  </Layout>
 </template>
 <script>
 import { ref } from 'vue'
-import SideBar from '../Shared/SideBar.vue'
+import Layout from '../Shared/Layout.vue'
 
 export default {
     setup() {
@@ -140,11 +127,9 @@ export default {
             stepHandler
         };
     },
-    components: { SideBar }
+    components: { Layout }
 }
 </script>
 <style>
-  .origin-bg-color {
-    background: #0F2133;
-  }
+  
 </style>
