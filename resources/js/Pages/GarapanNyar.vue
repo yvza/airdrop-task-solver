@@ -105,29 +105,18 @@ import { ref } from 'vue'
 import Layout from '../Shared/Layout.vue'
 
 export default {
-    setup() {
-        const isDark = ref(false);
-        const step = ref(1);
-        function modeToggled() {
-            this.isDark = !this.isDark;
-            if (this.isDark) {
-                document.querySelector("html").classList.add("dark");
-            }
-            else {
-                document.querySelector("html").classList.remove("dark");
-            }
-        }
-        function stepHandler() {
-            this.step = currentStep;
-        }
-        return {
-            isDark,
-            step,
-            modeToggled,
-            stepHandler
-        };
-    },
-    components: { Layout }
+  setup() {
+    const step = ref(1);
+    
+    function stepHandler(currentStep) {
+      this.step = currentStep;
+    }
+    return {
+      step,
+      stepHandler
+    };
+  },
+  components: { Layout }
 }
 </script>
 <style>
