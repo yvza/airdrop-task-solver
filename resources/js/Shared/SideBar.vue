@@ -39,7 +39,7 @@
           href="/kridit" 
           :active="$page.component === 'Kridit'"
         >
-          <i class="fas fa-info-circle mr-3"></i> Garapan Nyar
+          <i class="fas fa-info-circle mr-3"></i> Kridit
         </SideBarLink>
       </ul>
     </div>
