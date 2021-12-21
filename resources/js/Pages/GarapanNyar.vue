@@ -139,27 +139,33 @@
   </section>
 </template>
 <script>
+import { ref } from 'vue'
+
 export default {
-  name: 'GarapanNyar',
-  data() {
-    return {
-      isDark: false,
-      step: 1  
-    }
-  },
-  methods: {
-    modeToggled() {
+  setup() {
+    const isDark = ref(false)
+    const step = ref(1)
+
+    function modeToggled() {
       this.isDark = !this.isDark
       if (this.isDark) {
         document.querySelector('html').classList.add('dark')
       } else {
         document.querySelector('html').classList.remove('dark')
       }
-    },
-    stepHandler(currentStep) {
+    }
+
+    function stepHandler() {
       this.step = currentStep
     }
-  },
+
+    return {
+      isDark,
+      step,
+      modeToggled,
+      stepHandler
+    }
+  }
 }
 </script>
 <style>
