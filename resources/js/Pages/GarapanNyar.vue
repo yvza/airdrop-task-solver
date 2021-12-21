@@ -5,32 +5,7 @@
         <img src="../../img/airdrop_task_solver.png" alt="Airdrop Task Solver">
       </div>
       <div class="mt-12">
-        <ul class="w-52 flex flex-col">
-          <li class="p-5 my-1 w-full shadow-md bg-cyan-900 rounded text-slate-200 hover:cursor-pointer">
-            <i class="fas fa-plus-square"></i>
-            <a class="ml-3" href="">Garapan Nyar</a>
-          </li>
-          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
-            <i class="fas fa-list"></i>
-            <a class="ml-3" href="">List Garapan</a>
-          </li>
-          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
-            <i class="fas fa-users-cog"></i>
-            <a class="ml-3" href="">Ngatur Akun</a>
-          </li>
-          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
-            <i class="fas fa-file-alt"></i>
-            <a class="ml-3" href="">Ngatur Kata-Kata</a>
-          </li>
-          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
-            <i class="far fa-lightbulb"></i>
-            <a class="ml-3" href="">Basis Kawruh</a>
-          </li>
-          <li class="p-5 my-1 w-full hover:shadow-md hover:bg-cyan-900 hover:rounded hover:text-slate-200 hover:cursor-pointer">
-            <i class="fas fa-info-circle"></i>
-            <a class="ml-3" href="">Kridit</a>
-          </li>
-        </ul>
+        <SideBar />
       </div>
       <div class="grow flex items-end justify-center">
         <div class="flex items-center">
@@ -140,32 +115,32 @@
 </template>
 <script>
 import { ref } from 'vue'
+import SideBar from '../Shared/SideBar.vue'
 
 export default {
-  setup() {
-    const isDark = ref(false)
-    const step = ref(1)
-
-    function modeToggled() {
-      this.isDark = !this.isDark
-      if (this.isDark) {
-        document.querySelector('html').classList.add('dark')
-      } else {
-        document.querySelector('html').classList.remove('dark')
-      }
-    }
-
-    function stepHandler() {
-      this.step = currentStep
-    }
-
-    return {
-      isDark,
-      step,
-      modeToggled,
-      stepHandler
-    }
-  }
+    setup() {
+        const isDark = ref(false);
+        const step = ref(1);
+        function modeToggled() {
+            this.isDark = !this.isDark;
+            if (this.isDark) {
+                document.querySelector("html").classList.add("dark");
+            }
+            else {
+                document.querySelector("html").classList.remove("dark");
+            }
+        }
+        function stepHandler() {
+            this.step = currentStep;
+        }
+        return {
+            isDark,
+            step,
+            modeToggled,
+            stepHandler
+        };
+    },
+    components: { SideBar }
 }
 </script>
 <style>
