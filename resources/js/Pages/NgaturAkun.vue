@@ -1,11 +1,13 @@
 <template lang="">
-  <div>
-    ngatur akun
-  </div>
+  <Layout>
+    Ngatur Akun
+  </Layout>
 </template>
 <script>
+import Layout from '../Shared/Layout.vue'
+
 export default {
-  
+  components: { Layout }
 }
 </script>
 <style lang="">
