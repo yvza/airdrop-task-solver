@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GarapanNyarController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -14,9 +15,7 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('GarapanNyar');
-});
+Route::resource('/', GarapanNyarController::class);
 
 Route::get('list-garapan', function () {
     return Inertia::render('ListGarapan');
