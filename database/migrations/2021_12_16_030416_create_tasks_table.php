@@ -16,7 +16,7 @@ class CreateTasksTable extends Migration
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('garapan_id');
-            $table->unsignedBigInteger('task_name_list_id');
+            $table->unsignedBigInteger('task_name_list_id'); //ig: twitter or instagram or facebook, etc
             $table->timestamps();
             
             $table->foreign('garapan_id')->references('id')->on('garapan');
