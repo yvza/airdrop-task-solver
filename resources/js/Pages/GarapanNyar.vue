@@ -201,11 +201,7 @@ import AppHead from '../Shared/AppHead.vue'
 
 export default {
   props: {
-    errors: Object,
-    twitter_follow: Number,
-    twitter_love: Number,
-    twitter_retweet: Number,
-    twitter_quotetweet: Number
+    errors: Object
   },
   setup() {
     const step = ref(1); // step controll handler
