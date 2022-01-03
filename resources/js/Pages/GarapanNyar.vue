@@ -82,10 +82,46 @@
           <div class="form-control">
             <label class="cursor-pointer label">
               <span class="label-text">
+                <i class="fab fa-medium"></i>&nbsp;
+                Medium Task
+              </span> 
+              <input v-model="form.task_name" type="radio" name="opt" class="radio" disabled="disabled" value="3">
+            </label>
+          </div>
+          <div class="form-control">
+            <label class="cursor-pointer label">
+              <span class="label-text">
                 <i class="fab fa-instagram"></i>&nbsp;
                 Instagram Task
               </span> 
-              <input v-model="form.task_name" type="radio" name="opt" class="radio" disabled="disabled" value="3">
+              <input v-model="form.task_name" type="radio" name="opt" class="radio" disabled="disabled" value="4">
+            </label>
+          </div>
+          <div class="form-control">
+            <label class="cursor-pointer label">
+              <span class="label-text">
+                <i class="fab fa-discord"></i>&nbsp;
+                Discord Task
+              </span> 
+              <input v-model="form.task_name" type="radio" name="opt" class="radio" disabled="disabled" value="5">
+            </label>
+          </div>
+          <div class="form-control">
+            <label class="cursor-pointer label">
+              <span class="label-text">
+                <i class="fab fa-telegram"></i>&nbsp;
+                Telegram Task
+              </span> 
+              <input v-model="form.task_name" type="radio" name="opt" class="radio" disabled="disabled" value="6">
+            </label>
+          </div>
+          <div class="form-control">
+            <label class="cursor-pointer label">
+              <span class="label-text">
+                <i class="fab fa-reddit"></i>&nbsp;
+                Reddit Task
+              </span> 
+              <input v-model="form.task_name" type="radio" name="opt" class="radio" disabled="disabled" value="7">
             </label>
           </div>
           <div class="btn-group mt-4 justify-end">
@@ -102,6 +138,22 @@
               <label>Ada yang kosong nih, isi dulu yg bner y ges y</label>
             </div>
           </div>
+          <div v-if="$page.props.twitter.twitter_follow === 1" class="alert alert-success">
+            <div class="flex-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mx-2 stroke-current">          
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>                
+              </svg> 
+              <label>Berhasil Difollow!</label>
+            </div>
+          </div>
+          <div v-if="$page.props.twitter.twitter_follow === 0" class="alert alert-success">
+            <div class="flex-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mx-2 stroke-current">          
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>                
+              </svg> 
+              <label>Gagal Difollow!</label>
+            </div>
+          </div>
           <div class="form-control">
             <label class="label">
               <span class="label-text">Target Url</span>
@@ -110,7 +162,7 @@
           </div>
           <div class="form-control flex-col">
             <label class="label">
-              <span class="label-text">Aksi</span>
+              <span class="label-text">Kon Kate Nyapo</span>
             </label> 
             <div>
               <button @click="send(1)" type="submit" class="btn"><i class="fas fa-user-plus"></i>&nbsp; Follow</button>
@@ -135,7 +187,11 @@ import AppHead from '../Shared/AppHead.vue'
 
 export default {
   props: {
-    errors: Object
+    errors: Object,
+    twitter_follow: Number,
+    twitter_love: Number,
+    twitter_retweet: Number,
+    twitter_quotetweet: Number
   },
   setup() {
     const step = ref(1); // step controll handler
