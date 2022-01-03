@@ -6491,6 +6491,12 @@ html {
   --tw-text-opacity: 1;
   color: hsla(var(--wa) / var(--tw-text-opacity, 1));
 }
+.alert-error {
+  --tw-bg-opacity: 0.1;
+  background-color: hsla(var(--er) / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: hsla(var(--er) / var(--tw-text-opacity, 1));
+}
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
