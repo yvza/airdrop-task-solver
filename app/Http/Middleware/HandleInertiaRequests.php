@@ -37,7 +37,12 @@ class HandleInertiaRequests extends Middleware
     public function share(Request $request)
     {
         return array_merge(parent::share($request), [
-            //
+            'twitter' => [
+                'twitter_follow' => fn () => $request->session()->get('twitter_follow'),
+                'twitter_love' => fn () => $request->session()->get('twitter_love'),
+                'twitter_retweet' => fn () => $request->session()->get('twitter_retweet'),
+                'twitter_quote_tweet' => fn () => $request->session()->get('twitter_quote_tweet'),
+            ],
         ]);
     }
 }
