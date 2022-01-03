@@ -6,6 +6,7 @@ use Inertia\Inertia;
 use App\Models\Tasks;
 use App\Models\Garapan;
 use App\Models\TaskResults;
+use App\Models\TwitterToken;
 use Illuminate\Http\Request;
 use League\OAuth1\Client\Server\Twitter;
 use Coderjerk\BirdElephant\BirdElephant;
@@ -79,30 +80,26 @@ class GarapanNyarController extends Controller
             // some config
             $twitter_api_key = env('TWITTER_API_KEY');
             $twitter_api_key_secret = env('TWITTER_API_KEY_SECRET');
-            $twitter_client_id = env('TWITTER_CLIENT_ID');
-            $twitter_client_secret = env('TWITTER_CLIENT_SECRET');
-            $twitter_user_id = env('TWITTER_USER_ID');
             
             // https://developer.twitter.com/en/docs/tutorials/authenticating-with-twitter-api-for-enterprise/oauth1-0a-and-user-access-tokens
             // https://developer.twitter.com/en/docs/authentication/oauth-1-0a/obtaining-user-access-tokens
             // follwo action
+            $twitter_token = TwitterToken::all()->toArray();
+            if (empty($twitter_token)) {
+                return redirect()->back()->with('twitter_token', 'Akses dulu http://airdrop-task-solver.test/twitter-token untuk dapetin tokennya 😋');
+            }
             $credentials = array(
                 'bearer_token' => $twitter_authorization_bearer, // OAuth 2.0 Bearer Token requests
                 'consumer_key' => $twitter_api_key, // identifies your app, always needed
                 'consumer_secret' => $twitter_api_key_secret, // app secret, always needed
-                'token_identifier' => '523159523-do7jsdjJ4UNCPeGxkAZzEmSRMH6XOkV6JNmXCP55', // OAuth 1.0a User Context requests
-                'token_secret' => 'FeWlyZ6gUTxrxImwpoMDCoe0CDBQnkoHm1fQPsvk2wUqk', // OAuth 1.0a User Context requests
+                'token_identifier' => $twitter_token[0]['oauth_token'], // OAuth 1.0a User Context requests
+                'token_secret' => $twitter_token[0]['oauth_token_secret'], // OAuth 1.0a User Context requests
             );
             
             $twitter = new BirdElephant($credentials);
             $user = $twitter->user(env('TWITTER_USERNAME'));
             $follow = $user->follow($decoded_target_username);
-            if ($follow->data->following) {
-                return redirect()->back()->with('twitter_follow', 1);
-            } else {
-                return redirect()->back()->with('twitter_follow', 0);
-            }
-            // return redirect()->back()->with();
+            if ($follow->data->following) return redirect()->back()->with('success_message', 'Berhasil Difollow! 😄');
 
             // next, do the task, end then save the result
             // $task_result = new TaskResults;
