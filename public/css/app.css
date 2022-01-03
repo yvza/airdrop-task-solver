@@ -6479,6 +6479,12 @@ html {
   border-color: transparent;
   cursor: not-allowed;
 }
+.alert-success {
+  --tw-bg-opacity: 0.1;
+  background-color: hsla(var(--su) / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: hsla(var(--su) / var(--tw-text-opacity, 1));
+}
 .alert-warning {
   --tw-bg-opacity: 0.1;
   background-color: hsla(var(--wa) / var(--tw-bg-opacity, 1));
