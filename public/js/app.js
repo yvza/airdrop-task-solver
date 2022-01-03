@@ -20142,11 +20142,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
-    errors: Object,
-    twitter_follow: Number,
-    twitter_love: Number,
-    twitter_retweet: Number,
-    twitter_quotetweet: Number
+    errors: Object
   },
   setup: function setup() {
     var step = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(1); // step controll handler
