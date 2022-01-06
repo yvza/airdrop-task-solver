@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class TaskResults extends Model
 {
     use HasFactory;
-    protected $table = 'task_result';
+    protected $table = 'task_results';
     protected $guarded = ['id'];
 }
