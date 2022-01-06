@@ -21572,7 +21572,7 @@ var _hoisted_18 = {
 
 var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "text-xs mb-3 text-center"
-}, "Change Mode", -1
+}, "Nggo nganti mode", -1
 /* HOISTED */
 );
 
