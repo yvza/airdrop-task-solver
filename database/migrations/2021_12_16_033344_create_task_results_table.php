@@ -18,6 +18,7 @@ class CreateTaskResultsTable extends Migration
             $table->unsignedBigInteger('tasks_id');
             $table->integer('task_type_id'); //ig: retweet, follow, love, etc
             $table->integer('status');
+            $table->string('additional_message')->nullable(); //for saving something
             $table->timestamps();
 
             $table->foreign('tasks_id')->references('id')->on('tasks');
