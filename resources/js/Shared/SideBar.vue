@@ -46,7 +46,7 @@
     </div>
     <div class="grow flex items-end justify-center">
       <div class="flex flex-col">
-        <p class="text-xs mb-3 text-center">Change Mode</p>
+        <p class="text-xs mb-3 text-center">Nggo nganti mode</p>
         <div class="flex items-center justify-center">
           <i class="fas fa-sun"></i>&nbsp;<input type="checkbox" class="toggle" @click="modeToggled()">&nbsp;<i class="fas fa-moon"></i>
         </div>
