@@ -1,13 +1,22 @@
 <template lang="">
+  <AppHead title="List Garapan">
+    <meta name="description" content="List Garapan - Airdrop Task Solver" />
+  </AppHead>
   <Layout>
-    List garapan
+    <article class="w-full flex flex-col">
+      List Garapan
+    </article>
   </Layout>
 </template>
 <script>
 import Layout from '../Shared/Layout.vue'
+import AppHead from '../Shared/AppHead.vue'
 
 export default {
-  components: { Layout }
+  components: { 
+    Layout,
+    AppHead 
+  }
 }
 </script>
 <style lang="">
