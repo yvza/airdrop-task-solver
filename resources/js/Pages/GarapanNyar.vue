@@ -3,7 +3,7 @@
     <meta name="description" content="Airdrop Task Solver" />
   </AppHead>
   <Layout>
-    <article class="w-5/6 flex flex-col">
+    <article class="w-full flex flex-col">
       <div class="px-10 pt-10 shadow-lg">
         <div class="head-content">
           <h1 class="text-2xl font-bold font-sans">Garapan Nyar</h1>
@@ -20,7 +20,7 @@
           </ul>
         </div>
       </div>
-      <form @submit.prevent="submit" action="/" method="post" class="content grow bg-slate-100 p-10 overflow-x-scroll">
+      <form @submit.prevent="submit" action="/" method="post" class="content grow bg-slate-100 p-10 overflow-y-scroll">
         <div v-show="step === 1">
           <div v-if="errors.airdrop_name || errors.project_url || errors.distribution_date" class="alert alert-warning">
             <div class="flex-1">
