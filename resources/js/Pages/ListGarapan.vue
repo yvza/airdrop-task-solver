@@ -69,7 +69,7 @@
             </div>
           </div>
         </div>
-        <div class="flex-grow mr-5 h-full">
+        <div class="flex-grow h-full">
           <p class="text-center text-2xl mb-9">Jek Suwe (11)</p>
           <div class="max-h-[33rem] overflow-y-scroll">
             <div class="rounded-md border-solid border-2 border-sky-900 p-4 my-3">
