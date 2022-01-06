@@ -2,6 +2,7 @@
   <aside class="w-72 min-w-72 p-6 h-screen origin-bg-color text-slate-400 flex flex-col">
     <div class="">
       <img src="../../img/airdrop_task_solver.png" alt="Airdrop Task Solver">
+      <p class="text-sm text-center">Next generation airdrop tooling</p>
     </div>
     <div class="mt-12">
       <ul class="w-52 flex flex-col">
@@ -44,8 +45,11 @@
       </ul>
     </div>
     <div class="grow flex items-end justify-center">
-      <div class="flex items-center">
-        <i class="fas fa-sun"></i>&nbsp;<input type="checkbox" class="toggle" @click="modeToggled()">&nbsp;<i class="fas fa-moon"></i>
+      <div class="flex flex-col">
+        <p class="text-xs mb-3 text-center">Change Mode</p>
+        <div class="flex items-center justify-center">
+          <i class="fas fa-sun"></i>&nbsp;<input type="checkbox" class="toggle" @click="modeToggled()">&nbsp;<i class="fas fa-moon"></i>
+        </div>
       </div>
     </div>
   </aside>
