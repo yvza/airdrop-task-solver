@@ -1,5 +1,5 @@
 <template lang="">
-  <aside class="w-1/6 p-6 h-screen origin-bg-color text-slate-400 flex flex-col">
+  <aside class="w-72 min-w-72 p-6 h-screen origin-bg-color text-slate-400 flex flex-col">
     <div class="">
       <img src="../../img/airdrop_task_solver.png" alt="Airdrop Task Solver">
     </div>
