@@ -6505,13 +6505,13 @@ html {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 .mr-3 {
   margin-right: 0.75rem;
@@ -6522,26 +6522,17 @@ html {
 .ml-3 {
   margin-left: 0.75rem;
 }
-.mt-12 {
-  margin-top: 3rem;
-}
-.ml-5 {
-  margin-left: 1.25rem;
-}
 .mr-5 {
   margin-right: 1.25rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 .mb-9 {
   margin-bottom: 2.25rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mt-12 {
+  margin-top: 3rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
@@ -6552,64 +6543,26 @@ html {
 .h-6 {
   height: 1.5rem;
 }
-.h-screen {
-  height: 100vh;
-}
 .h-full {
   height: 100%;
 }
-.max-h-full {
-  max-height: 100%;
-}
-.max-h-20 {
-  max-height: 5rem;
-}
-.max-h-96 {
-  max-height: 24rem;
-}
-.max-h-fit {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-}
-.max-h-screen {
-  max-height: 100vh;
-}
-.max-h-\[28\] {
-  max-height: 28;
-}
-.max-h-\[28rem\] {
-  max-height: 28rem;
-}
-.max-h-\[31rem\] {
-  max-height: 31rem;
+.h-screen {
+  height: 100vh;
 }
 .max-h-\[33rem\] {
   max-height: 33rem;
 }
-.w-40 {
-  width: 10rem;
+.w-full {
+  width: 100%;
 }
 .w-6 {
   width: 1.5rem;
 }
-.w-1\/6 {
-  width: 16.666667%;
-}
-.w-52 {
-  width: 13rem;
-}
-.w-full {
-  width: 100%;
-}
-.w-5\/6 {
-  width: 83.333333%;
-}
 .w-72 {
   width: 18rem;
 }
-.w-10 {
-  width: 2.5rem;
+.w-52 {
+  width: 13rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -6641,17 +6594,14 @@ html {
 .justify-center {
   justify-content: center;
 }
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
 .overflow-y-scroll {
   overflow-y: scroll;
 }
-.rounded {
-  border-radius: 0.25rem;
-}
 .rounded-md {
   border-radius: 0.375rem;
+}
+.rounded {
+  border-radius: 0.25rem;
 }
 .border-2 {
   border-width: 2px;
@@ -6684,14 +6634,14 @@ html {
 .p-10 {
   padding: 2.5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
 .p-6 {
   padding: 1.5rem;
 }
 .p-5 {
   padding: 1.25rem;
-}
-.p-4 {
-  padding: 1rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -6729,13 +6679,13 @@ html {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
-.text-slate-200 {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
 .text-sky-900 {
   --tw-text-opacity: 1;
   color: rgb(12 74 110 / var(--tw-text-opacity));
+}
+.text-slate-200 {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
