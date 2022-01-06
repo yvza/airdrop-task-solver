@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GarapanNyarController;
+use App\Http\Controllers\ListGarapanController;
 use App\Http\Controllers\TwitterTokenController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -20,9 +21,7 @@ Route::resource('/', GarapanNyarController::class);
 
 Route::resource('twitter-token', TwitterTokenController::class);
 
-Route::get('list-garapan', function () {
-    return Inertia::render('ListGarapan');
-});
+Route::resource('list-garapan', ListGarapanController::class);
 
 Route::get('ngatur-akun', function () {
     return Inertia::render('NgaturAkun');
