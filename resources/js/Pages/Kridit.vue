@@ -14,7 +14,17 @@
         <p class="max-h-[37rem] overflow-y-scroll w-full">
           Dependensi lengkap bisa dilihat di <a class="text-sky-900" target="_blank" href="https://github.com/yvza/airdrop-task-solver/network/dependencies">GitHub</a>. <br>
           Logo Designer : <a class="text-sky-900" target="_blank" href="https://dribbble.com/puji_hartono">@warehouse_logo</a>. <br>
-          Font : <a class="text-sky-900" target="_blank" href="https://www.dafont.com/true-south.font">True South</a>. <br>
+          Font : <a class="text-sky-900" target="_blank" href="https://www.dafont.com/true-south.font">True South</a>. <br><br>
+
+          <span class="font-semibold text-lg">Creator</span> <br>
+          <a class="text-sky-900" target="_blank" href="https://github.com/yvza">@yvza</a> <br><br>
+
+
+          <span class="font-semibold text-lg">Contributor</span> <br>
+          <a class="text-sky-900" target="_blank" href="#">-</a> <br><br>
+
+          <span class="font-semibold text-lg">Collaborator</span> <br>
+          <a class="text-sky-900" target="_blank" href="#">-</a> <br><br>
         </p>
       </div>
     </article>
