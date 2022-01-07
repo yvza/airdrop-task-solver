@@ -6549,17 +6549,11 @@ html {
 .h-screen {
   height: 100vh;
 }
-.max-h-\[33rem\] {
-  max-height: 33rem;
-}
-.max-h-\[40rem\] {
-  max-height: 40rem;
-}
-.max-h-\[38rem\] {
-  max-height: 38rem;
-}
 .max-h-\[37rem\] {
   max-height: 37rem;
+}
+.max-h-\[33rem\] {
+  max-height: 33rem;
 }
 .w-full {
   width: 100%;
