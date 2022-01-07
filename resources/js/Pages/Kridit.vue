@@ -11,7 +11,11 @@
         </div>
       </div>
       <div class="content grow bg-slate-100 p-10 flex flex-row">
-        
+        <p class="max-h-[37rem] overflow-y-scroll w-full">
+          Dependensi lengkap bisa dilihat di <a class="text-sky-900" target="_blank" href="https://github.com/yvza/airdrop-task-solver/network/dependencies">GitHub</a>. <br>
+          Logo Designer : <a class="text-sky-900" target="_blank" href="https://dribbble.com/puji_hartono">@warehouse_logo</a>. <br>
+          Font : <a class="text-sky-900" target="_blank" href="https://www.dafont.com/true-south.font">True South</a>. <br>
+        </p>
       </div>
     </article>
   </Layout>
