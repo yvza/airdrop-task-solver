@@ -15,9 +15,9 @@
           <p v-if="!today" class="text-center text-2xl mb-9">Land Saiki ({{ list_garapan[0].length }})</p>
           <p v-if="today" class="text-center text-2xl mb-9">Land Saiki (-)</p>
           <div class="max-h-[33rem] overflow-y-scroll">
-            <div v-for="garapan in list_garapan[0]" class="rounded-md border-solid border-2 border-sky-900 p-4 my-3">
+            <div v-for="garapan in list_garapan[0]" class="rounded-md border-solid border-2 border-sky-900 p-4 my-3 max-w-[23rem] w-[23rem]">
               <p class="font-bold">{{ garapan.airdrop_name }}</p>
-              <p><i class="fas fa-link mr-2"></i><a class="text-sky-900" target="_blank" :href="garapan.project_url">{{ garapan.project_url }}</a></p>
+              <p class="truncate"><i class="fas fa-link mr-2"></i><a class="text-sky-900" target="_blank" :href="garapan.project_url">{{ garapan.project_url }}</a></p>
               <p><i class="fas fa-calendar-day mr-2"></i>{{ garapan.distribution_date }}</p>
               <p><i class="far fa-dot-circle mr-2"></i>{{ garapan.created_at }}</p>
             </div>
@@ -33,9 +33,9 @@
           <p v-if="!nextThreeDays" class="text-center text-2xl mb-9">Telong dino neh ({{ list_garapan[1].length }})</p>
           <p v-if="nextThreeDays" class="text-center text-2xl mb-9">Telong dino neh (-)</p>
           <div class="max-h-[33rem] overflow-y-scroll">
-            <div v-for="garapan in list_garapan[1]" class="rounded-md border-solid border-2 border-sky-900 p-4 my-3">
+            <div v-for="garapan in list_garapan[1]" class="rounded-md border-solid border-2 border-sky-900 p-4 my-3 max-w-[23rem] w-[23rem]">
               <p class="font-bold">{{ garapan.airdrop_name }}</p>
-              <p><i class="fas fa-link mr-2"></i><a class="text-sky-900" target="_blank" :href="garapan.project_url">{{ garapan.project_url }}</a></p>
+              <p class="truncate"><i class="fas fa-link mr-2"></i><a class="text-sky-900" target="_blank" :href="garapan.project_url">{{ garapan.project_url }}</a></p>
               <p><i class="fas fa-calendar-day mr-2"></i>{{ garapan.distribution_date }}</p>
               <p><i class="far fa-dot-circle mr-2"></i>{{ garapan.created_at }}</p>
             </div>
@@ -51,9 +51,9 @@
           <p v-if="!stillInLongTime" class="text-center text-2xl mb-9">Jek Suwe ({{ list_garapan[2].length }})</p>
           <p v-if="stillInLongTime" class="text-center text-2xl mb-9">Jek Suwe (-)</p>
           <div class="max-h-[33rem] overflow-y-scroll">
-            <div v-for="garapan in list_garapan[2]" class="rounded-md border-solid border-2 border-sky-900 p-4 my-3">
+            <div v-for="garapan in list_garapan[2]" class="rounded-md border-solid border-2 border-sky-900 p-4 my-3 max-w-[23rem] w-[23rem]">
               <p class="font-bold">{{ garapan.airdrop_name }}</p>
-              <p><i class="fas fa-link mr-2"></i><a class="text-sky-900" target="_blank" :href="garapan.project_url">{{ garapan.project_url }}</a></p>
+              <p class="truncate"><i class="fas fa-link mr-2"></i><a class="text-sky-900" target="_blank" :href="garapan.project_url">{{ garapan.project_url }}</a></p>
               <p><i class="fas fa-calendar-day mr-2"></i>{{ garapan.distribution_date }}</p>
               <p><i class="far fa-dot-circle mr-2"></i>{{ garapan.created_at }}</p>
             </div>
