@@ -1,7 +1,8 @@
-![airdrop_task_solver](https://user-images.githubusercontent.com/25668079/145761894-c05e24db-e34f-49c2-af9a-7ff22fb72c3f.png)
+<p align="center"><a href="https://github.com/yvza/airdrop-task-solver" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/25668079/148505812-0fc971e6-92b7-4beb-b0b0-d22f4eaf388e.png" alt="Airdrop Task Solver"></a></p>
 
-Inspired by [Viloid](https://github.com/vsec7), but this is more complicated
-![cg7asgd6enh8hfwiejf2hd](https://user-images.githubusercontent.com/25668079/145762624-bc4702f3-7d1b-46eb-8b6d-7ac92d0851b6.png)
+<h2 align="center">Supporting Airdrop Task Solver</h2>
+
+Singkatnya project ini terinspirasi oleh <a href="https://github.com/vsec7/twitdrop" target="_blank">Viloid</a>, tapi ini lebih kompleks. Airdrop Task Solver adalah salah satu Project Open Source berlisensi MIT, diluar sana banyak sekali tool otomatisasi yang tersebar secara terpisah, dan kebanyakan masih berbasis CLI. Ini akan sulit bagi orang yang tidak terbiasa, output berupa file .txt yang tentunya kurang informatif. Sehingga muncullah ide untuk membuat suatu aplikasi yang akan menjalankan perintah secara otomatis, sesuai dengan fitur yang tersedia, dan menampilkan result dalam bentuk visual text. Tidak hanya untuk otomatisasi Twitter saja, tapi akan mengintegrasikan sosmed-sosmed besar diluar sana. Eittss! belum selesai, dari langkah awal ini juga, gw harap akan menghasilkan inovasi-inovasi yang lahir dari ide kalian semua, gw tunggu yaa 😍😃.
 
 Tech Stack:
 - Laravel Framework 8.75.0
@@ -12,3 +13,5 @@ Tech Stack:
 - Laravel Mix 6.0.6
 - Lodash 4.17.19
 - 10.4.11-MariaDB
+
+![screencapture-airdrop-task-solver-test-2022-01-06-21_17_27](https://user-images.githubusercontent.com/25668079/148509154-53f772e2-6d2d-4f02-bbc2-4c9467b58ee7.png)
