@@ -6567,6 +6567,24 @@ html {
 .w-52 {
   width: 13rem;
 }
+.w-\[23rem\] {
+  width: 23rem;
+}
+.max-w-xl {
+  max-width: 36rem;
+}
+.max-w-md {
+  max-width: 28rem;
+}
+.max-w-sm {
+  max-width: 24rem;
+}
+.max-w-xs {
+  max-width: 20rem;
+}
+.max-w-\[23rem\] {
+  max-width: 23rem;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -6599,6 +6617,11 @@ html {
 }
 .overflow-y-scroll {
   overflow-y: scroll;
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .rounded-md {
   border-radius: 0.375rem;
