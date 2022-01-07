@@ -18,9 +18,8 @@ class ListGarapanController extends Controller
     {   
         $helper = [];
         $today = Garapan::whereDate('distribution_date', Carbon::today())->get();
-        $next_three_days = Garapan::where('distribution_date', '>=', strtotime('+1 day'))
-        ->where('distribution_date', '<=', strtotime('+3 day'));
-        $still_in_long_time = Garapan::where('distribution_date', '>=', strtotime('+4 day'));
+        $next_three_days = Garapan::whereBetween('distribution_date', [Carbon::today()->addDays(1)->toDateString(), Carbon::today()->addDays(3)->toDateString()])->get();
+        $still_in_long_time = Garapan::where('distribution_date', '>=', Carbon::today()->addDays(4)->toDateString())->get();
         array_push($helper, $today, $next_three_days, $still_in_long_time);
 
         return Inertia::render('ListGarapan', [
