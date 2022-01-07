@@ -6675,8 +6675,18 @@ html {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .font-bold {
   font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .text-slate-400 {
   --tw-text-opacity: 1;
