@@ -4,14 +4,19 @@
 
 Singkatnya, project ini terinspirasi oleh <a href="https://github.com/vsec7/twitdrop" target="_blank">Viloid</a>, tapi ini jauh lebih kompleks. Airdrop Task Solver adalah Aplikasi berbasis Web (jalan di localhost kalian dan kalian punya kontrol 100% atas Aplikasi ini) yang bertugas untuk mengerjakan Task yang biasanya ada di suatu event Airdrop dan merupakan salah satu Project Open Source berlisensi MIT. Diluar sana banyak sekali tool otomatisasi yang tersebar secara terpisah, dan kebanyakan masih berbasis CLI. Ini akan sulit bagi orang yang tidak terbiasa, output berupa file .txt yang tentunya kurang informatif. Sehingga muncullah ide untuk membuat suatu aplikasi yang akan menjalankan perintah secara otomatis, sesuai dengan fitur yang tersedia dan menampilkan result dalam bentuk visual text. Tidak hanya untuk otomatisasi Twitter saja, tapi akan mengintegrasikan sosmed-sosmed besar diluar sana. Eittss! belum selesai, dari langkah awal ini juga, gw berharap akan menghasilkan inovasi-inovasi yang lahir dari ide kalian semua, gw tunggu yaa 😍😃.
 
-Tech Stack:
-- Laravel Framework 8.75.0
-- Vue.js 3.2.24
-- Inertia.js 0.10.1
-- Tailwind CSS 3.0.1
-- Axios 0.21
-- Laravel Mix 6.0.6
-- Lodash 4.17.19
-- 10.4.11-MariaDB
+## Documentation
+
+Browse [online documentation here](https://cybsecdiary.com/airdrop-task-solver-temp-doc/).
+
+## Tech Stack
+
+* Laravel Framework 8.75.0
+* Vue.js 3.2.24
+* Inertia.js 0.10.1
+* Tailwind CSS 3.0.1
+* Axios 0.21
+* Laravel Mix 6.0.6
+* Lodash 4.17.19
+* 10.4.11-MariaDB
 
 ![screencapture-airdrop-task-solver-test-2022-01-06-21_17_27](https://user-images.githubusercontent.com/25668079/148509154-53f772e2-6d2d-4f02-bbc2-4c9467b58ee7.png)
